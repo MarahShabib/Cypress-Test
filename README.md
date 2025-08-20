@@ -1,48 +1,102 @@
-Test case 1 : 
+# National Geographic Cypress Tests
 
-National Geographic Login Scenarios: 
+This repository contains automated test cases for the National Geographic website using **Cypress**.
 
-This test suite validates the login and account creation functionality on the National Geographic website.
-Because authentication occurs inside an iframe (iframe#oneid-iframe), a helper function (getIframeBody) is used to access and interact with form fields.
+---
 
-The tests are designed to ensure that:
+## Test Suites
 
-Existing users can log in successfully.
+### 1. National Geographic Login Scenarios
 
-New users can create an account and log in afterward.
+This suite validates login and account creation functionality.
 
---------------------------------------------------------------------------------------------------------------------------------------------
+**Notes:**
 
-Test Case 2 :
+* Authentication occurs inside an iframe (`iframe#oneid-iframe`), using the helper function `getIframeBody`.
+* Tests ensure:
 
-National Geographic Search Senarios:
+  * Existing users can log in successfully.
+  * New users can create an account and log in afterward.
 
-This test suite verifies the search functionality on the National Geographic website.
+---
 
-The tests are designed to ensure that:
+### 2. National Geographic Search Scenarios
 
-Searching with a valid query returns relevant results.
+This suite verifies the search functionality.
 
-Submitting an empty search input does not break the application and instead shows default content . 
+**Tests ensure:**
 
---------------------------------------------------------------------------------------------------------------------------------------------
+* Searching with a valid query returns relevant results.
+* Submitting an empty search input shows default content without breaking the application.
 
-Test Case 3 : 
+---
 
-Article Category Filter Tests :
+### 3. Article Category Filter Tests
 
-This test suite validates the category navigation and filtering functionality on the National Geographic website.
+This suite validates category navigation and filtering.
 
-The purpose of these tests is to ensure that when a user selects a category (e.g., Animals, Science & Nature) from the site navigation, the corresponding articles are displayed, and subcategory navigation works correctly.
+**Tests ensure:**
 
---------------------------------------------------------------------------------------------------------------------------------------------
+* Selecting a category (e.g., Animals, Science & Nature) displays corresponding articles.
+* Subcategory navigation works correctly.
 
-Test Case 4 :
+---
 
-National Geographic Logo
+### 4. National Geographic Logo
 
-This test suite verifies the behavior and functionality of the National Geographic logo across different pages on the National Geographicwebsite.
+This suite verifies the logo behavior across different pages.
 
-The purpose of these tests is to ensure that the logo is always visible, uses the correct image source, and functions as a navigation element back to the homepage.
+**Tests ensure:**
 
---------------------------------------------------------------------------------------------------------------------------------------------
+* The logo is always visible.
+* The logo uses the correct image source.
+* Clicking the logo navigates back to the homepage.
+
+---
+
+## Repository Link
+
+[View the repository](https://github.com/MarahShabib/Cypress-Test/tree/master)
+
+---
+
+## Prerequisites
+
+Before running the tests, make sure you have installed:
+
+* [Node.js](https://nodejs.org/) (v18+ recommended)
+* npm (comes with Node.js)
+* Git
+
+---
+
+## Setup Instructions
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/MarahShabib/Cypress-Test.git
+cd Cypress-Test
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+Dependencies include:
+
+* Cypress
+* TypeScript
+* Cypress Iframe
+
+3. **Run Cypress Tests:**
+
+```bash
+npx cypress open
+```
+
+---
+
+**Enjoy automated testing of the National Geographic website!**
