@@ -41,7 +41,8 @@ Dependencies include:
 npx cypress open
 ```
 
----
+## Test File Location
+All test specifications are located in the `cypress/e2e` directory:
 
 ## Test Suites
 
