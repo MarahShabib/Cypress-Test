@@ -4,6 +4,45 @@ This repository contains automated test cases for the National Geographic websit
 
 ---
 
+## Prerequisites
+
+Before running the tests, make sure you have installed:
+
+* [Node.js](https://nodejs.org/) (v18+ recommended)
+* npm (comes with Node.js)
+* Git
+
+---
+
+## Setup Instructions
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/MarahShabib/Cypress-Test.git
+cd Cypress-Test
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+Dependencies include:
+
+* Cypress
+* TypeScript
+* Cypress Iframe
+
+3. **Run Cypress Tests:**
+
+```bash
+npx cypress open
+```
+
+---
+
 ## Test Suites
 
 ### 1. National Geographic Login Scenarios
@@ -52,51 +91,9 @@ This suite verifies the logo behavior across different pages.
 * The logo uses the correct image source.
 * Clicking the logo navigates back to the homepage.
 
----
 
-## Repository Link
 
-[View the repository](https://github.com/MarahShabib/Cypress-Test/tree/master)
 
----
 
-## Prerequisites
 
-Before running the tests, make sure you have installed:
 
-* [Node.js](https://nodejs.org/) (v18+ recommended)
-* npm (comes with Node.js)
-* Git
-
----
-
-## Setup Instructions
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/MarahShabib/Cypress-Test.git
-cd Cypress-Test
-```
-
-2. **Install dependencies:**
-
-```bash
-npm install
-```
-
-Dependencies include:
-
-* Cypress
-* TypeScript
-* Cypress Iframe
-
-3. **Run Cypress Tests:**
-
-```bash
-npx cypress open
-```
-
----
-
-**Enjoy automated testing of the National Geographic website!**
